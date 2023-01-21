@@ -28,4 +28,6 @@ jobs:
         run: pnpm run build
 
       - name: Publish to GitHub Packages
-        run: pnpm publish --access public --token $PNPM_TOKEN
+        run: pnpm -r publish --no-git-checks --access public
+        env:
+          NPM_TOKEN: ${{ secrets.$PNPM_TOKEN }}
