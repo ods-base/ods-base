@@ -27,7 +27,8 @@ jobs:
       - name: Build package
         run: pnpm run build
 
+      - name: Config npm
+        run: echo "//npm.pkg.github.com/:_authToken=${PNPM_TOKEN}" > .npmrc
+
       - name: Publish to GitHub Packages
         run: pnpm -r publish --no-git-checks --access public
-        env:
-          NPM_TOKEN: ${{ secrets.$PNPM_TOKEN }}
