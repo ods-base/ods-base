@@ -22,7 +22,7 @@
     "react-dom": "^18.2.0"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry":"https://npm.pkg.github.com/bob-obringer/ods"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
