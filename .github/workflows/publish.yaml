@@ -18,6 +18,8 @@ jobs:
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
+        with:
+          version: 6.7.0
 
       - name: Build package
         run: pnpm run build
