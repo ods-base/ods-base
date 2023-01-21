@@ -32,4 +32,14 @@ jobs:
 
       - name: Publish to GitHub Packages
         run: pnpm -r publish --no-git-checks --access public
-#        run: pnpm -r publish --no-git-checks --access public
+        permissions:
+          contents: write
+
+      - name: 'Automated Version Bump'
+        uses: 'phips28/gh-action-bump-version@master'
+        env:
+          GITHUB_TOKEN: ${{ GITHUB_TOKEN }}
+        with:
+          minor-wording: 'major'
+          major-wording: 'minor'
+          patch-wording: 'patch'
