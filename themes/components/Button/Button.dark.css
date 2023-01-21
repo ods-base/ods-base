@@ -1,0 +1,43 @@
+.oc-dark-mode {
+  /* background/border */
+  --oc-btn-accent-color: var(--oc-color-dark-plum-11);
+  --oc-btn-primary-color: var(--oc-color-dark-gray-11);
+  --oc-btn-secondary-color: var(--oc-color-dark-gray-8);
+  --oc-btn-destroy-color: var(--oc-color-dark-red-11);
+
+  --oc-btn-accent-hov-color: var(--oc-color-dark-plum-10);
+  --oc-btn-primary-hov-color: var(--oc-color-dark-gray-10);
+  --oc-btn-secondary-hov-color: var(--oc-color-dark-gray-7);
+  --oc-btn-destroy-hov-color: var(--oc-color-dark-red-10);
+
+  --oc-btn-accent-active-color: var(--oc-color-dark-plum-9);
+  --oc-btn-primary-active-color: var(--oc-color-dark-gray-9);
+  --oc-btn-secondary-active-color: var(--oc-color-dark-gray-6);
+  --oc-btn-destroy-active-color: var(--oc-color-dark-red-9);
+
+  --oc-btn-accent-disabled-color: var(--oc-color-dark-gray-7);
+  --oc-btn-primary-disabled-color: var(--oc-color-dark-gray-7);
+  --oc-btn-secondary-disabled-color: var(--oc-color-dark-gray-7);
+  --oc-btn-destroy-disabled-color: var(--oc-color-dark-gray-7);
+
+  /* text */
+  --oc-btn-accent-text-color: var(--oc-color-dark-plum-3);
+  --oc-btn-primary-text-color: var(--oc-color-dark-gray-3);
+  --oc-btn-secondary-text-color: var(--oc-color-dark-gray-11);
+  --oc-btn-destroy-text-color: var(--oc-color-dark-red-3);
+
+  --oc-btn-accent-hov-text-color: var(--oc-color-dark-plum-3);
+  --oc-btn-primary-hov-text-color: var(--oc-color-dark-gray-3);
+  --oc-btn-secondary-hov-text-color: var(--oc-color-dark-gray-11);
+  --oc-btn-destroy-hov-text-color: var(--oc-color-dark-red-3);
+
+  --oc-btn-accent-active-text-color: var(--oc-color-dark-plum-2);
+  --oc-btn-primary-active-text-color: var(--oc-color-dark-gray-2);
+  --oc-btn-secondary-active-text-color: var(--oc-color-dark-gray-10);
+  --oc-btn-destroy-active-text-color: var(--oc-color-dark-red-2);
+
+  --oc-btn-accent-disabled-text-color: var(--oc-color-dark-gray-8);
+  --oc-btn-primary-disabled-text-color: var(--oc-color-dark-gray-8);
+  --oc-btn-secondary-disabled-text-color: var(--oc-color-dark-gray-8);
+  --oc-btn-destroy-disabled-text-color: var(--oc-color-dark-gray-8);
+}

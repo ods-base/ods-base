@@ -1,0 +1,9 @@
+.focus {
+  outline: var(--oc-focus-ring-outline-width) solid var(--oc-focus-ring-color);
+  outline-offset: var(--oc-focus-ring-outline-offset);
+}
+
+.focusRing {
+  outline: var(--oc-focus-ring-keyboard-outline-width) solid var(--oc-focus-ring-color);
+  outline-offset: var(--oc-focus-ring-keyboard-outline-offset);
+}

@@ -1,0 +1,4 @@
+@import "./colors/light.css";
+@import "./components/Button/Button.light.css";
+@import "./components/FocusRing/FocusRing.light.css";
+@import "./components/Typography/Typography.light.css";

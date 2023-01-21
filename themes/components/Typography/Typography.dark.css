@@ -1,0 +1,8 @@
+.oc-dark-mode {
+  --oc-text-color-normal: var(--oc-color-dark-gray-11);
+  --oc-text-color-bright: var(--oc-color-dark-gray-12);
+  --oc-text-color-subtle: var(--oc-color-dark-gray-9);
+  --oc-text-color-accent: var(--oc-color-dark-gold-11);
+  --oc-text-color-link: var(--oc-color-dark-blue-9);
+  --oc-text-color-link-hover: var(--oc-color-dark-blue-11);
+}

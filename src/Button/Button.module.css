@@ -1,0 +1,314 @@
+.button {
+  transition-property: background, color, border;
+  transition-duration: var(--oc-transition-normal);
+  border-style: solid;
+  border-width: var(--oc-btn-border-width);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: relative;
+  font-family: var(--oc-btn-font-family);
+}
+
+.pendingIndicator {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity var(--oc-transition-normal)
+}
+
+.isPending .pendingIndicator {
+  opacity: 1;
+}
+
+.buttonBody {
+  opacity: 1;
+  transition: opacity var(--oc-transition-normal)
+}
+
+.isPending .buttonBody {
+  opacity: 0;
+}
+
+/*
+  Sizes
+ */
+.small {
+  padding: 0 var(--oc-btn-s-padding);
+  height: var(--oc-btn-s-height);
+  border-radius: var(--oc-btn-s-border-radius);
+  font-size: var(--oc-btn-s-font-size);
+  font-weight: var(--oc-btn-s-font-weight);
+ }
+
+.medium {
+  padding: 0 var(--oc-btn-m-padding);
+  height: var(--oc-btn-m-height);
+  border-radius: var(--oc-btn-m-border-radius);
+  font-size: var(--oc-btn-m-font-size);
+  font-weight: var(--oc-btn-m-font-weight);
+}
+
+.large {
+  padding: 0 var(--oc-btn-l-padding);
+  height: var(--oc-btn-l-height);
+  border-radius: var(--oc-btn-l-border-radius);
+  font-size: var(--oc-btn-l-font-size);
+  font-weight: var(--oc-btn-l-font-weight);
+}
+
+/*
+  Intents
+ */
+
+/* Accent */
+.accent {
+  border-color: var(--oc-btn-accent-color);
+  color: var(--oc-btn-accent-color);
+}
+.accent.fill {
+  background-color: var(--oc-btn-accent-color);
+  color: var(--oc-btn-accent-text-color);
+}
+
+.accent:not(.isPending):not([disabled]):hover {
+  border-color: var(--oc-btn-accent-hov-color);
+  color: var(--oc-btn-accent-hov-color);
+}
+.accent.fill:not(.isPending):not([disabled]):hover {
+  background-color: var(--oc-btn-accent-hov-color);
+  color: var(--oc-btn-accent-hov-text-color);
+}
+
+.accent:not(.isPending):not([disabled]):active {
+  border-color: var(--oc-btn-accent-active-color);
+  color: var(--oc-btn-accent-active-color);
+}
+.accent.fill:not(.isPending):not([disabled]):active {
+  background-color: var(--oc-btn-accent-active-color);
+  color: var(--oc-btn-accent-active-text-color);
+}
+
+/* Primary */
+.primary {
+  border-color: var(--oc-btn-primary-color);
+  color: var(--oc-btn-primary-color);
+}
+.primary.fill {
+  background-color: var(--oc-btn-primary-color);
+  color: var(--oc-btn-primary-text-color);
+}
+
+.primary:not(.isPending):not([disabled]):hover {
+  border-color: var(--oc-btn-primary-hov-color);
+  color: var(--oc-btn-primary-hov-color);
+}
+.primary.fill:not(.isPending):not([disabled]):hover {
+  background-color: var(--oc-btn-primary-hov-color);
+  color: var(--oc-btn-primary-hov-text-color);
+}
+
+.primary:not(.isPending):not([disabled]):active {
+  border-color: var(--oc-btn-primary-active-color);
+  color: var(--oc-btn-primary-active-color);
+}
+.primary.fill:not(.isPending):not([disabled]):active {
+  background-color: var(--oc-btn-primary-active-color);
+  color: var(--oc-btn-primary-active-text-color);
+}
+
+/* Secondary */
+.secondary {
+  border-color: var(--oc-btn-secondary-color);
+  color: var(--oc-btn-secondary-text-color);
+}
+.secondary.fill {
+  background-color: var(--oc-btn-secondary-color);
+  color: var(--oc-btn-secondary-text-color);
+}
+
+.secondary:not(.isPending):not([disabled]):hover {
+  border-color: var(--oc-btn-secondary-hov-color);
+  color: var(--oc-btn-secondary-hov-text-color);
+}
+.secondary.fill:not(.isPending):not([disabled]):hover {
+  background-color: var(--oc-btn-secondary-hov-color);
+  color: var(--oc-btn-secondary-hov-text-color);
+}
+
+.secondary:not(.isPending):not([disabled]):active {
+  border-color: var(--oc-btn-secondary-active-color);
+  color: var(--oc-btn-secondary-active-text-color);
+}
+.secondary.fill:not(.isPending):not([disabled]):active {
+  background-color: var(--oc-btn-secondary-active-color);
+  color: var(--oc-btn-secondary-active-text-color);
+}
+
+/* Destroy */
+.destroy {
+  border-color: var(--oc-btn-destroy-color);
+  color: var(--oc-btn-destroy-color);
+}
+.destroy.fill {
+  background-color: var(--oc-btn-destroy-color);
+  color: var(--oc-btn-destroy-text-color);
+}
+
+.destroy:not(.isPending):not([disabled]):hover {
+  border-color: var(--oc-btn-destroy-hov-color);
+  color: var(--oc-btn-destroy-hov-color);
+}
+.destroy.fill:not(.isPending):not([disabled]):hover {
+  background-color: var(--oc-btn-destroy-hov-color);
+  color: var(--oc-btn-destroy-hov-text-color);
+}
+
+.destroy:not(.isPending):not([disabled]):active {
+  border-color: var(--oc-btn-destroy-active-color);
+  color: var(--oc-btn-destroy-active-color);
+}
+.destroy.fill:not(.isPending):not([disabled]):active {
+  background-color: var(--oc-btn-destroy-active-color);
+  color: var(--oc-btn-destroy-active-text-color);
+}
+
+/* todo: need better handling of these */
+/* White */
+.white {
+  border-color: rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
+}
+.white.fill {
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,0,1);
+}
+.white.transparent {
+  background: transparent;
+  border-color: rgba(255,255,255,0.4);
+}
+.white.transparent.fill {
+  background-color: rgba(255,255,255,0.4);
+  border-color: transparent
+}
+
+.white:not(.isPending):not([disabled]):hover {
+  border-color: rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
+}
+.white.fill:not(.isPending):not([disabled]):hover {
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,0,1);
+}
+.white.transparent:not(.isPending):not([disabled]):hover {
+  background: transparent;
+  border-color: rgba(255,255,255,0.4);
+}
+.white.transparent.fill:not(.isPending):not([disabled]):hover {
+  background-color: rgba(255,255,255,0.4);
+  border-color: transparent
+}
+
+.white:not(.isPending):not([disabled]):active {
+  border-color: rgba(255,255,255,1);
+  color: rgba(255,255,255,1);
+}
+.white.fill:not(.isPending):not([disabled]):active {
+  background-color: rgba(255,255,255,1);
+  color: rgba(0,0,0,1);
+}
+.white.transparent:not(.isPending):not([disabled]):active {
+  background-color: rgba(255,255,255,0.4);
+  border-color: rgba(255,255,255,0.4);
+}
+.white.fill.transparent:not(.isPending):not([disabled]):active {
+  background: transparent;
+  border-color: rgba(255,255,255,0.4);
+}
+.white.transparent:not(.isPending):not([disabled]):active {
+  background: transparent;
+  border-color: rgba(255,255,255,0.4);
+}
+.white.transparent.fill:not(.isPending):not([disabled]):active {
+  background-color: rgba(255,255,255,0.4);
+  border-color: transparent
+}
+
+
+/* Black */
+.black {
+  border-color: rgba(0,0,0,1);
+  color: rgba(0,0,0,1);
+}
+.black.fill {
+  background-color: rgba(0,0,0,1);
+  color: rgba(255,255,255,1);
+}
+.black.transparent {
+  background: transparent;
+  border-color: rgba(0,0,0,0.4);
+}
+.black.transparent.fill {
+  background-color: rgba(0,0,0,0.4);
+  border-color: transparent
+}
+
+.black:not(.isPending):not([disabled]):hover {
+  border-color: rgba(0,0,0,1);
+  color: rgba(0,0,0,1);
+}
+.black.fill:not(.isPending):not([disabled]):hover {
+  background-color: rgba(0,0,0,1);
+  color: rgba(255,255,255,1);
+}
+.black.transparent:not(.isPending):not([disabled]):hover {
+  background: transparent;
+  border-color: rgba(0,0,0,0.4);
+}
+.black.transparent.fill:not(.isPending):not([disabled]):hover {
+  background-color: rgba(0,0,0,0.4);
+  border-color: transparent
+}
+
+.black:not(.isPending):not([disabled]):active {
+  border-color: rgba(0,0,0,1);
+  color: rgba(0,0,0,1);
+}
+.black.fill:not(.isPending):not([disabled]):active {
+  background-color: rgba(0,0,0,1);
+  color: rgba(255,255,255,1);
+}
+.black.transparent:not(.isPending):not([disabled]):active {
+  background-color: rgba(0,0,0,0.4);
+  border-color: rgba(0,0,0,0.4);
+}
+.black.fill.transparent:not(.isPending):not([disabled]):active {
+  background: transparent;
+  border-color: rgba(0,0,0,0.4);
+}
+.black.transparent:not(.isPending):not([disabled]):active {
+  background: transparent;
+  border-color: rgba(0,0,0,0.4);
+}
+.black.transparent.fill:not(.isPending):not([disabled]):active {
+  background-color: rgba(0,0,0,0.4);
+  border-color: transparent
+}
+
+
+/* This should be last to make sure we can override everything */
+.button[disabled] {
+  border-color: var(--oc-btn-accent-disabled-color);
+  color: var(--oc-btn-accent-disabled-color);
+}
+.button.fill[disabled] {
+  background-color: var(--oc-btn-accent-disabled-color);
+  color: var(--oc-btn-accent-disabled-text-color);
+}

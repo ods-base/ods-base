@@ -1,0 +1,14 @@
+.textField {
+  display: flex;
+  flex-direction: column;
+}
+
+.textField label {
+  font-size: var(--font-size-sm);
+}
+
+.textField input {
+  border: 1px solid var(--stroke-color);
+  border-radius: 3px;
+  padding: 4px 8px;
+}

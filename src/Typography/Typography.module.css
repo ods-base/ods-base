@@ -1,0 +1,68 @@
+.heading {
+  line-height: var(--oc-typo-heading-line-height);
+  margin-top: var(--oc-typo-heading-margin-top);
+  margin-bottom: var(--oc-typo-heading-margin-bottom);
+  text-transform: var(--oc-typo-heading-text-transform);
+}
+
+.text {
+  line-height: var(--oc-typo-text-line-height);
+}
+
+p.text, .text p {
+  margin-top: var(--oc-typo-paragraph-margin-top); 
+  margin-bottom: var(--oc-typo-paragraph-margin-bottom);
+}
+
+a.text, .text a {
+  color: var(--oc-text-color-link);
+}
+
+a.text:hover, .text a:hover {
+  color: var(--oc-text-color-link-hover);
+}
+
+.text strong {
+  font-weight: var(--oc-typo-text-weight-heavy);
+}
+
+.text em {
+  font-style: italic;
+}
+
+.serif { font-family: var(--oc-font-family-serif) }
+.sansSerif { font-family: var(--oc-font-family-sans-serif) }
+.monospace { font-family: var(--oc-font-family-monospace) }
+
+.textColorBright { color: var(--oc-text-color-bright)}
+.textColorNormal { color: var(--oc-text-color-normal)}
+.textColorSubtle { color: var(--oc-text-color-subtle)}
+.textColorAccent { color: var(--oc-text-color-accent)}
+
+/* Heading */
+.headingWeightLight { font-weight: var(--oc-typo-heading-weight-light) }
+.headingWeightDefault { font-weight: var(--oc-typo-heading-weight-default) }
+.headingWeightHeavy { font-weight: var(--oc-typo-heading-weight-heavy) }
+
+.headingSizeXXS { font-size: var(--oc-typo-heading-size-xxs) }
+.headingSizeXS { font-size: var(--oc-typo-heading-size-xs) }
+.headingSizeS { font-size: var(--oc-typo-heading-size-s) }
+.headingSizeM { font-size: var(--oc-typo-heading-size-m) }
+.headingSizeL { font-size: var(--oc-typo-heading-size-l) }
+.headingSizeXL { font-size: var(--oc-typo-heading-size-xl) }
+.headingSizeXXL { font-size: var(--oc-typo-heading-size-xxl) }
+.headingSizeXXXL { font-size: var(--oc-typo-heading-size-xxxl) }
+
+/* Text */
+.textWeightLight { font-weight: var(--oc-typo-text-weight-light) }
+.textWeightDefault { font-weight: var(--oc-typo-text-weight-default) }
+.textWeightHeavy { font-weight: var(--oc-typo-text-weight-heavy) }
+
+.textSizeXXS { font-size: var(--oc-typo-text-size-xxs) }
+.textSizeXS { font-size: var(--oc-typo-text-size-xs) }
+.textSizeS { font-size: var(--oc-typo-text-size-s) }
+.textSizeM { font-size: var(--oc-typo-text-size-m) }
+.textSizeL { font-size: var(--oc-typo-text-size-l) }
+.textSizeXL { font-size: var(--oc-typo-text-size-xl) }
+.textSizeXXL { font-size: var(--oc-typo-text-size-xxl) }
+.textSizeXXXL { font-size: var(--oc-typo-text-size-xxxl) }
