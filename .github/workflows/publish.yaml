@@ -1,0 +1,23 @@
+name: Publish to GitHub Packages
+
+env:
+  PNPM_TOKEN: ${{ secrets.PNPM_TOKEN }}
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build package
+        run: pnpm run build
+
+      - name: Publish to GitHub Packages
+        run: pnpm publish --access public --token $PNPM_TOKEN
