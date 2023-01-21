@@ -1,7 +1,7 @@
 name: Publish to GitHub Packages
 
 env:
-  PNPM_TOKEN: ${{ secrets.PNPM_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
         run: pnpm run build
 
       - name: Config npm
-        run: echo "//npm.pkg.github.com/:_authToken=${PNPM_TOKEN}" > .npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
 
       - name: Publish to GitHub Packages
         run: pnpm -r publish --no-git-checks --access public
