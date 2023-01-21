@@ -36,7 +36,7 @@ jobs:
       - name: 'Automated Version Bump'
         uses: 'phips28/gh-action-bump-version@master'
         env:
-          GITHUB_TOKEN: ${{ GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${GITHUB_TOKEN}
         with:
           minor-wording: 'major'
           major-wording: 'minor'
