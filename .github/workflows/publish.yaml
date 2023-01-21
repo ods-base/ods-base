@@ -19,7 +19,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 6.7.0
+          version: 7.25.1
           
       - name: Install dependencies
         run: pnpm install
@@ -32,3 +32,4 @@ jobs:
 
       - name: Publish to GitHub Packages
         run: pnpm -r publish --no-git-checks --access public
+#        run: pnpm -r publish --no-git-checks --access public
