@@ -1,58 +1,58 @@
-.oc-theme {
-  --oc-font-family-serif: serif;
-  --oc-font-family-sans-serif: sans-serif;
-  --oc-font-family-monospace: monospace;
+.ods-theme {
+  --ods-font-family-serif: serif;
+  --ods-font-family-sans-serif: sans-serif;
+  --ods-font-family-monospace: monospace;
 
-  --oc-font-size-50: 11px;
-  --oc-font-size-75: 12px;
-  --oc-font-size-100: 14px;
-  --oc-font-size-200: 16px;
-  --oc-font-size-300: 18px;
-  --oc-font-size-400: 20px;
-  --oc-font-size-500: 22px;
-  --oc-font-size-600: 25px;
-  --oc-font-size-700: 28px;
-  --oc-font-size-800: 32px;
-  --oc-font-size-900: 36px;
-  --oc-font-size-1000: 40px;
-  --oc-font-size-1100: 45px;
-  --oc-font-size-1200: 50px;
-  --oc-font-size-1300: 60px;
+  --ods-font-size-50: 11px;
+  --ods-font-size-75: 12px;
+  --ods-font-size-100: 14px;
+  --ods-font-size-200: 16px;
+  --ods-font-size-300: 18px;
+  --ods-font-size-400: 20px;
+  --ods-font-size-500: 22px;
+  --ods-font-size-600: 25px;
+  --ods-font-size-700: 28px;
+  --ods-font-size-800: 32px;
+  --ods-font-size-900: 36px;
+  --ods-font-size-1000: 40px;
+  --ods-font-size-1100: 45px;
+  --ods-font-size-1200: 50px;
+  --ods-font-size-1300: 60px;
 
   /* Heading */
-  --oc-typo-heading-line-height: 1.3em;
-  --oc-typo-heading-margin-top: 0.125em;
-  --oc-typo-heading-margin-bottom: 0.375em;
-  --oc-typo-heading-text-transform: none;
+  --ods-typo-heading-line-height: 1.3em;
+  --ods-typo-heading-margin-top: 0.125em;
+  --ods-typo-heading-margin-bottom: 0.375em;
+  --ods-typo-heading-text-transform: none;
 
-  --oc-typo-heading-size-xxxl: var(--oc-font-size-1300);
-  --oc-typo-heading-size-xxl: var(--oc-font-size-1100);
-  --oc-typo-heading-size-xl: var(--oc-font-size-900);
-  --oc-typo-heading-size-l: var(--oc-font-size-700);
-  --oc-typo-heading-size-m: var(--oc-font-size-500);
-  --oc-typo-heading-size-s: var(--oc-font-size-300);
-  --oc-typo-heading-size-xs: var(--oc-font-size-200);
-  --oc-typo-heading-size-xxs: var(--oc-font-size-100);
+  --ods-typo-heading-size-xxxl: var(--ods-font-size-1300);
+  --ods-typo-heading-size-xxl: var(--ods-font-size-1100);
+  --ods-typo-heading-size-xl: var(--ods-font-size-900);
+  --ods-typo-heading-size-l: var(--ods-font-size-700);
+  --ods-typo-heading-size-m: var(--ods-font-size-500);
+  --ods-typo-heading-size-s: var(--ods-font-size-300);
+  --ods-typo-heading-size-xs: var(--ods-font-size-200);
+  --ods-typo-heading-size-xxs: var(--ods-font-size-100);
 
-  --oc-typo-heading-weight-light: 200;
-  --oc-typo-heading-weight-default: 500;
-  --oc-typo-heading-weight-heavy: 700;
+  --ods-typo-heading-weight-light: 200;
+  --ods-typo-heading-weight-default: 500;
+  --ods-typo-heading-weight-heavy: 700;
 
   /* Text */
-  --oc-typo-text-line-height: 1.5em;
-  --oc-typo-paragraph-margin-top: 0.875em;
-  --oc-typo-paragraph-margin-bottom: 0.25em;
+  --ods-typo-text-line-height: 1.5em;
+  --ods-typo-paragraph-margin-top: 0.875em;
+  --ods-typo-paragraph-margin-bottom: 0.25em;
   
-  --oc-typo-text-size-xxxl: var(--oc-font-size-600);
-  --oc-typo-text-size-xxl: var(--oc-font-size-500);
-  --oc-typo-text-size-xl: var(--oc-font-size-400);
-  --oc-typo-text-size-l: var(--oc-font-size-300);
-  --oc-typo-text-size-m: var(--oc-font-size-200);
-  --oc-typo-text-size-s: var(--oc-font-size-100);
-  --oc-typo-text-size-xs: var(--oc-font-size-75);
-  --oc-typo-text-size-xxs: var(--oc-font-size-50);
+  --ods-typo-text-size-xxxl: var(--ods-font-size-600);
+  --ods-typo-text-size-xxl: var(--ods-font-size-500);
+  --ods-typo-text-size-xl: var(--ods-font-size-400);
+  --ods-typo-text-size-l: var(--ods-font-size-300);
+  --ods-typo-text-size-m: var(--ods-font-size-200);
+  --ods-typo-text-size-s: var(--ods-font-size-100);
+  --ods-typo-text-size-xs: var(--ods-font-size-75);
+  --ods-typo-text-size-xxs: var(--ods-font-size-50);
 
-  --oc-typo-text-weight-light: 300;
-  --oc-typo-text-weight-default: 400;
-  --oc-typo-text-weight-heavy: 600;
+  --ods-typo-text-weight-light: 300;
+  --ods-typo-text-weight-default: 400;
+  --ods-typo-text-weight-heavy: 600;
 }

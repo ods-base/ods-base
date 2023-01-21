@@ -1,5 +1,5 @@
 :root {
-  --oc-transition-fast: 0.1s;
-  --oc-transition-normal: 0.2s;
-  --oc-transition-slow: 0.4s;
+  --ods-transition-fast: 0.1s;
+  --ods-transition-normal: 0.2s;
+  --ods-transition-slow: 0.4s;
 }

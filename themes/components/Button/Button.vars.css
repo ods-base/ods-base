@@ -1,22 +1,22 @@
-.oc-theme {
-  --oc-btn-font-family: sans-serif;
-  --oc-btn-border-width: 1px;
+.ods-theme {
+  --ods-btn-font-family: sans-serif;
+  --ods-btn-border-width: 1px;
   
-  --oc-btn-s-font-size: 12px;
-  --oc-btn-s-font-weight: 400;
-  --oc-btn-s-padding: 10px;
-  --oc-btn-s-height: 25px;
-  --oc-btn-s-border-radius: 4px;
+  --ods-btn-s-font-size: 12px;
+  --ods-btn-s-font-weight: 400;
+  --ods-btn-s-padding: 10px;
+  --ods-btn-s-height: 25px;
+  --ods-btn-s-border-radius: 4px;
 
-  --oc-btn-m-font-size: 14px;
-  --oc-btn-m-font-weight: 500;
-  --oc-btn-m-padding: 15px;
-  --oc-btn-m-height: 30px;
-  --oc-btn-m-border-radius: 6px;
+  --ods-btn-m-font-size: 14px;
+  --ods-btn-m-font-weight: 500;
+  --ods-btn-m-padding: 15px;
+  --ods-btn-m-height: 30px;
+  --ods-btn-m-border-radius: 6px;
 
-  --oc-btn-l-font-size: 16px;
-  --oc-btn-l-font-weight: 600;
-  --oc-btn-l-padding: 20px;
-  --oc-btn-l-height: 35px;
-  --oc-btn-l-border-radius: 8px;
+  --ods-btn-l-font-size: 16px;
+  --ods-btn-l-font-weight: 600;
+  --ods-btn-l-padding: 20px;
+  --ods-btn-l-height: 35px;
+  --ods-btn-l-border-radius: 8px;
 }

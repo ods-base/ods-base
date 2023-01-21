@@ -29,9 +29,9 @@ function getStyleConfig(fileName) {
 }
 
 export default [
-  getStyleConfig('oc-theme'),
-  getStyleConfig('oc-light-mode'),
-  getStyleConfig('oc-dark-mode'),
+  getStyleConfig('ods-theme'),
+  getStyleConfig('ods-light-mode'),
+  getStyleConfig('ods-dark-mode'),
   defineConfig({
     input: './src/index.ts',
     output: [
@@ -50,7 +50,7 @@ export default [
           path: "./postcss.config.js",
           ctx: null
         },
-        extract: path.resolve('dist/obringer-components.css'),
+        extract: path.resolve('dist/ods-components.css'),
       }),
       json(),
       swc({

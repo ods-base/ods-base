@@ -1,8 +1,8 @@
 import "../themes/colors/dark.css";
 import "../themes/colors/light.css";
-import "../themes/oc-theme.css";
-import "../themes/oc-light-mode.css";
-import "../themes/oc-dark-mode.css";
+import "../themes/ods-theme.css";
+import "../themes/ods-light-mode.css";
+import "../themes/ods-dark-mode.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -44,16 +44,16 @@ const withTheme = (StoryFn, context) => {
   const { colorMode } = context.globals;
   document.body.style.transition = "background-color 0.2s";
   document.body.style.backgroundColor =
-    colorMode === "oc-light-mode" ? "#FFF" : "var(--oc-color-dark-gray-2)";
+    colorMode === "oc-light-mode" ? "#FFF" : "var(--ods-color-dark-gray-2)";
 
   return (
     <div
       className={[colorMode, "oc-theme"].join(" ")}
       style={{
-        "--oc-font-family-sans-serif": "Quicksand",
-        "--oc-font-family-serif": "Josefin Slab",
-        "--oc-font-family-monospace": "Azeret Mono",
-        "--oc-btn-font-family": "Quicksand",
+        "--ods-font-family-sans-serif": "Quicksand",
+        "--ods-font-family-serif": "Josefin Slab",
+        "--ods-font-family-monospace": "Azeret Mono",
+        "--ods-btn-font-family": "Quicksand",
       }}
     >
       <StoryFn />

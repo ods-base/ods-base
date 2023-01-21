@@ -1,14 +1,14 @@
 .button {
   transition-property: background, color, border;
-  transition-duration: var(--oc-transition-normal);
+  transition-duration: var(--ods-transition-normal);
   border-style: solid;
-  border-width: var(--oc-btn-border-width);
+  border-width: var(--ods-btn-border-width);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   background-color: transparent;
   position: relative;
-  font-family: var(--oc-btn-font-family);
+  font-family: var(--ods-btn-font-family);
 }
 
 .pendingIndicator {
@@ -21,7 +21,7 @@
   bottom: 0;
   right: 0;
   opacity: 0;
-  transition: opacity var(--oc-transition-normal)
+  transition: opacity var(--ods-transition-normal)
 }
 
 .isPending .pendingIndicator {
@@ -30,7 +30,7 @@
 
 .buttonBody {
   opacity: 1;
-  transition: opacity var(--oc-transition-normal)
+  transition: opacity var(--ods-transition-normal)
 }
 
 .isPending .buttonBody {
@@ -41,27 +41,27 @@
   Sizes
  */
 .small {
-  padding: 0 var(--oc-btn-s-padding);
-  height: var(--oc-btn-s-height);
-  border-radius: var(--oc-btn-s-border-radius);
-  font-size: var(--oc-btn-s-font-size);
-  font-weight: var(--oc-btn-s-font-weight);
+  padding: 0 var(--ods-btn-s-padding);
+  height: var(--ods-btn-s-height);
+  border-radius: var(--ods-btn-s-border-radius);
+  font-size: var(--ods-btn-s-font-size);
+  font-weight: var(--ods-btn-s-font-weight);
  }
 
 .medium {
-  padding: 0 var(--oc-btn-m-padding);
-  height: var(--oc-btn-m-height);
-  border-radius: var(--oc-btn-m-border-radius);
-  font-size: var(--oc-btn-m-font-size);
-  font-weight: var(--oc-btn-m-font-weight);
+  padding: 0 var(--ods-btn-m-padding);
+  height: var(--ods-btn-m-height);
+  border-radius: var(--ods-btn-m-border-radius);
+  font-size: var(--ods-btn-m-font-size);
+  font-weight: var(--ods-btn-m-font-weight);
 }
 
 .large {
-  padding: 0 var(--oc-btn-l-padding);
-  height: var(--oc-btn-l-height);
-  border-radius: var(--oc-btn-l-border-radius);
-  font-size: var(--oc-btn-l-font-size);
-  font-weight: var(--oc-btn-l-font-weight);
+  padding: 0 var(--ods-btn-l-padding);
+  height: var(--ods-btn-l-height);
+  border-radius: var(--ods-btn-l-border-radius);
+  font-size: var(--ods-btn-l-font-size);
+  font-weight: var(--ods-btn-l-font-weight);
 }
 
 /*
@@ -70,114 +70,114 @@
 
 /* Accent */
 .accent {
-  border-color: var(--oc-btn-accent-color);
-  color: var(--oc-btn-accent-color);
+  border-color: var(--ods-btn-accent-color);
+  color: var(--ods-btn-accent-color);
 }
 .accent.fill {
-  background-color: var(--oc-btn-accent-color);
-  color: var(--oc-btn-accent-text-color);
+  background-color: var(--ods-btn-accent-color);
+  color: var(--ods-btn-accent-text-color);
 }
 
 .accent:not(.isPending):not([disabled]):hover {
-  border-color: var(--oc-btn-accent-hov-color);
-  color: var(--oc-btn-accent-hov-color);
+  border-color: var(--ods-btn-accent-hov-color);
+  color: var(--ods-btn-accent-hov-color);
 }
 .accent.fill:not(.isPending):not([disabled]):hover {
-  background-color: var(--oc-btn-accent-hov-color);
-  color: var(--oc-btn-accent-hov-text-color);
+  background-color: var(--ods-btn-accent-hov-color);
+  color: var(--ods-btn-accent-hov-text-color);
 }
 
 .accent:not(.isPending):not([disabled]):active {
-  border-color: var(--oc-btn-accent-active-color);
-  color: var(--oc-btn-accent-active-color);
+  border-color: var(--ods-btn-accent-active-color);
+  color: var(--ods-btn-accent-active-color);
 }
 .accent.fill:not(.isPending):not([disabled]):active {
-  background-color: var(--oc-btn-accent-active-color);
-  color: var(--oc-btn-accent-active-text-color);
+  background-color: var(--ods-btn-accent-active-color);
+  color: var(--ods-btn-accent-active-text-color);
 }
 
 /* Primary */
 .primary {
-  border-color: var(--oc-btn-primary-color);
-  color: var(--oc-btn-primary-color);
+  border-color: var(--ods-btn-primary-color);
+  color: var(--ods-btn-primary-color);
 }
 .primary.fill {
-  background-color: var(--oc-btn-primary-color);
-  color: var(--oc-btn-primary-text-color);
+  background-color: var(--ods-btn-primary-color);
+  color: var(--ods-btn-primary-text-color);
 }
 
 .primary:not(.isPending):not([disabled]):hover {
-  border-color: var(--oc-btn-primary-hov-color);
-  color: var(--oc-btn-primary-hov-color);
+  border-color: var(--ods-btn-primary-hov-color);
+  color: var(--ods-btn-primary-hov-color);
 }
 .primary.fill:not(.isPending):not([disabled]):hover {
-  background-color: var(--oc-btn-primary-hov-color);
-  color: var(--oc-btn-primary-hov-text-color);
+  background-color: var(--ods-btn-primary-hov-color);
+  color: var(--ods-btn-primary-hov-text-color);
 }
 
 .primary:not(.isPending):not([disabled]):active {
-  border-color: var(--oc-btn-primary-active-color);
-  color: var(--oc-btn-primary-active-color);
+  border-color: var(--ods-btn-primary-active-color);
+  color: var(--ods-btn-primary-active-color);
 }
 .primary.fill:not(.isPending):not([disabled]):active {
-  background-color: var(--oc-btn-primary-active-color);
-  color: var(--oc-btn-primary-active-text-color);
+  background-color: var(--ods-btn-primary-active-color);
+  color: var(--ods-btn-primary-active-text-color);
 }
 
 /* Secondary */
 .secondary {
-  border-color: var(--oc-btn-secondary-color);
-  color: var(--oc-btn-secondary-text-color);
+  border-color: var(--ods-btn-secondary-color);
+  color: var(--ods-btn-secondary-text-color);
 }
 .secondary.fill {
-  background-color: var(--oc-btn-secondary-color);
-  color: var(--oc-btn-secondary-text-color);
+  background-color: var(--ods-btn-secondary-color);
+  color: var(--ods-btn-secondary-text-color);
 }
 
 .secondary:not(.isPending):not([disabled]):hover {
-  border-color: var(--oc-btn-secondary-hov-color);
-  color: var(--oc-btn-secondary-hov-text-color);
+  border-color: var(--ods-btn-secondary-hov-color);
+  color: var(--ods-btn-secondary-hov-text-color);
 }
 .secondary.fill:not(.isPending):not([disabled]):hover {
-  background-color: var(--oc-btn-secondary-hov-color);
-  color: var(--oc-btn-secondary-hov-text-color);
+  background-color: var(--ods-btn-secondary-hov-color);
+  color: var(--ods-btn-secondary-hov-text-color);
 }
 
 .secondary:not(.isPending):not([disabled]):active {
-  border-color: var(--oc-btn-secondary-active-color);
-  color: var(--oc-btn-secondary-active-text-color);
+  border-color: var(--ods-btn-secondary-active-color);
+  color: var(--ods-btn-secondary-active-text-color);
 }
 .secondary.fill:not(.isPending):not([disabled]):active {
-  background-color: var(--oc-btn-secondary-active-color);
-  color: var(--oc-btn-secondary-active-text-color);
+  background-color: var(--ods-btn-secondary-active-color);
+  color: var(--ods-btn-secondary-active-text-color);
 }
 
 /* Destroy */
 .destroy {
-  border-color: var(--oc-btn-destroy-color);
-  color: var(--oc-btn-destroy-color);
+  border-color: var(--ods-btn-destroy-color);
+  color: var(--ods-btn-destroy-color);
 }
 .destroy.fill {
-  background-color: var(--oc-btn-destroy-color);
-  color: var(--oc-btn-destroy-text-color);
+  background-color: var(--ods-btn-destroy-color);
+  color: var(--ods-btn-destroy-text-color);
 }
 
 .destroy:not(.isPending):not([disabled]):hover {
-  border-color: var(--oc-btn-destroy-hov-color);
-  color: var(--oc-btn-destroy-hov-color);
+  border-color: var(--ods-btn-destroy-hov-color);
+  color: var(--ods-btn-destroy-hov-color);
 }
 .destroy.fill:not(.isPending):not([disabled]):hover {
-  background-color: var(--oc-btn-destroy-hov-color);
-  color: var(--oc-btn-destroy-hov-text-color);
+  background-color: var(--ods-btn-destroy-hov-color);
+  color: var(--ods-btn-destroy-hov-text-color);
 }
 
 .destroy:not(.isPending):not([disabled]):active {
-  border-color: var(--oc-btn-destroy-active-color);
-  color: var(--oc-btn-destroy-active-color);
+  border-color: var(--ods-btn-destroy-active-color);
+  color: var(--ods-btn-destroy-active-color);
 }
 .destroy.fill:not(.isPending):not([disabled]):active {
-  background-color: var(--oc-btn-destroy-active-color);
-  color: var(--oc-btn-destroy-active-text-color);
+  background-color: var(--ods-btn-destroy-active-color);
+  color: var(--ods-btn-destroy-active-text-color);
 }
 
 /* todo: need better handling of these */
@@ -305,10 +305,10 @@
 
 /* This should be last to make sure we can override everything */
 .button[disabled] {
-  border-color: var(--oc-btn-accent-disabled-color);
-  color: var(--oc-btn-accent-disabled-color);
+  border-color: var(--ods-btn-accent-disabled-color);
+  color: var(--ods-btn-accent-disabled-color);
 }
 .button.fill[disabled] {
-  background-color: var(--oc-btn-accent-disabled-color);
-  color: var(--oc-btn-accent-disabled-text-color);
+  background-color: var(--ods-btn-accent-disabled-color);
+  color: var(--ods-btn-accent-disabled-text-color);
 }
