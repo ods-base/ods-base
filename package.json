@@ -1,6 +1,6 @@
 {
   "name": "@bob-obringer/ods",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "description": "",
   "typings": "dist/index.d.ts",
@@ -63,7 +63,6 @@
     "@radix-ui/react-popover": "^1.0.2",
     "@radix-ui/react-slot": "^1.0.1",
     "class-variance-authority": "^0.4.0",
-    "classnames": "^2.3.2",
     "postcss-import": "^15.1.0",
     "react-aria": "^3.22.0",
     "react-stately": "^3.20.0"
