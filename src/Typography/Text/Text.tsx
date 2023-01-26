@@ -7,7 +7,7 @@ import {
 } from "react";
 import { cva, VariantProps } from "class-variance-authority";
 import styles from "../Typography.module.css";
-import { OCComponentPropsAnd, OCParentComponentPropsAnd } from "../../types";
+import { OCComponentPropsAnd } from "../../types";
 import { Slot } from "@radix-ui/react-slot";
 
 const textVariants = cva(styles.text, {

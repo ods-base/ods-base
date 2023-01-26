@@ -8,5 +8,7 @@
     "prettier",
     "plugin:prettier/recommended"
   ],
-  "rules": {}
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }
