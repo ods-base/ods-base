@@ -1,0 +1,23 @@
+.textField {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.textfield input {
+  background-color: var(--ods-textfield-bg-color);
+  border: 1px solid var(--ods-textfield-border-color);
+  color: var(--ods-textfield-text-color);
+}
+
+.small {
+  font-size: 12px
+}
+
+.medium {
+  font-size: 14px;
+}
+
+.large {
+  font-size: 16px;
+}
