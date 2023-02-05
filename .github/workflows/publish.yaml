@@ -38,8 +38,7 @@ jobs:
         run: |
           echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
           cat .npmrc
-        
-      
+          
       - name: Publish to NPM
         run: pnpm -r publish --no-git-checks --access public
 
