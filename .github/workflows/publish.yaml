@@ -1,8 +1,5 @@
 name: Publish to GitHub Packages
 
-env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-
 on:
   push:
     branches:
@@ -11,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
     steps:
       - name: Checkout code
@@ -41,6 +41,8 @@ jobs:
           
       - name: Publish to NPM
         run: pnpm -r publish --no-git-checks --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@master
