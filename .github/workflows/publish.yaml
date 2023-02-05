@@ -34,10 +34,10 @@ jobs:
       - name: Build package
         run: pnpm run build
 
-      - name: Config npm
-        run: echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
+#      - name: Config npm
+#        run: echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
 
-      - name: Publish to GitHub Packages
+      - name: Publish to NPM
         run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
