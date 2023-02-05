@@ -2,9 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 200px;
+  padding: 5px;
+  border-radius: 4px;
 }
 
 .textfield input {
+  width: 100%;
   background-color: var(--ods-textfield-bg-color);
   border: 1px solid var(--ods-textfield-border-color);
   color: var(--ods-textfield-text-color);
@@ -20,4 +23,18 @@
 
 .large {
   font-size: 16px;
+}
+
+.labelErrorWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.errorMessage {
+  color: var(--ods-textfield-error-color);
+}
+
+.error {
+  outline: 1px solid var(--ods-textfield-error-color);
 }

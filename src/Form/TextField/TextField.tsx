@@ -1,7 +1,10 @@
-import { cva, VariantProps } from "class-variance-authority";
+import { cx, cva, VariantProps } from "class-variance-authority";
 import styles from "./TextField.module.css";
 import { useTextField, AriaTextFieldProps } from "react-aria";
-import { forwardRef, useRef } from "react";
+import { forwardRef, RefObject, useRef } from "react";
+import { FocusRing } from "../../FocusRing/FocusRing";
+import { OCComponentPropsAnd } from "../../types";
+import { Text } from "../../Typography/Text/Text";
 
 const textFieldVariants = cva(styles.textField, {
   variants: {
@@ -14,44 +17,69 @@ const textFieldVariants = cva(styles.textField, {
 });
 
 export interface TextFieldProps
-  extends AriaTextFieldProps,
-    VariantProps<typeof textFieldVariants> {}
+  extends Omit<AriaTextFieldProps, "onChange">,
+    VariantProps<typeof textFieldVariants> {
+  onChange?: AriaTextFieldProps["onInput"];
+  onValueChange?: AriaTextFieldProps["onChange"];
+}
 
 /**
  * This is gonna change
- * @param size
- * @param props
- * @constructor
  * @experimental
  */
-function TextField({ size, ...props }: TextFieldProps) {
+function TextField(
+  { size, className, style, ...props }: OCComponentPropsAnd<TextFieldProps>,
+  ref: RefObject<HTMLInputElement>
+) {
+  const defaultRef = useRef(null);
+  const defaultedRef = ref || defaultRef;
+
+  // turn react aria props back into what is expected
+  const reactAriaProps = {
+    ...props,
+    onChange: props.onValueChange,
+    onInput: props.onChange,
+  };
+
   const { label } = props;
-  const ref = useRef();
   const { labelProps, inputProps, descriptionProps, errorMessageProps } =
-    useTextField(props, ref);
+    useTextField(reactAriaProps, defaultedRef);
 
   // we're adding this to the wrong place... we need better styling of all of this
-  const classes = textFieldVariants({
-    size,
-  });
+  const classes = cx(
+    textFieldVariants({ size }),
+    props.errorMessage ? styles.error : null
+  );
 
   return (
-    <div className={styles.textField}>
-      <label {...labelProps}>{label}</label>
-      <input className={classes} {...inputProps} ref={ref} />
+    <div style={style} className={[styles.textfield, className].join(" ")}>
+      <div className={styles.labelErrorWrapper}>
+        <label {...labelProps}>{label}</label>
+        {props.errorMessage && (
+          <Text
+            size="xs"
+            weight="heavy"
+            {...errorMessageProps}
+            className={styles.errorMessage}
+          >
+            {props.errorMessage}
+          </Text>
+        )}
+      </div>
+      <FocusRing isTextInput>
+        <input className={classes} {...inputProps} ref={ref} />
+      </FocusRing>
       {props.description && (
         <div {...descriptionProps} style={{ fontSize: 12 }}>
           {props.description}
-        </div>
-      )}
-      {props.errorMessage && (
-        <div {...errorMessageProps} style={{ color: "red", fontSize: 12 }}>
-          {props.errorMessage}
         </div>
       )}
     </div>
   );
 }
 
-const _TextField = forwardRef(TextField);
+const _TextField: typeof TextField & { ref?: RefObject<HTMLInputElement> } =
+  forwardRef(TextField) as typeof TextField & {
+    ref?: RefObject<HTMLInputElement>;
+  };
 export { _TextField as TextField };

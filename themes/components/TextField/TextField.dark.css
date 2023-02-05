@@ -1,5 +1,6 @@
 .ods-dark-mode {
   --ods-textfield-text-color: var(--ods-color-dark-gray-12);
-  --ods-textfield-border-color: var(--ods-color-dark-blue-1);
-  --ods-textfield-bg-color: var(--ods-color-dark-blue-4);
+  --ods-textfield-border-color: var(--ods-color-dark-blue-5);
+  --ods-textfield-bg-color: var(--ods-color-dark-blue-3);
+  --ods-textfield-error-color: var(--ods-color-dark-red-11);
 }

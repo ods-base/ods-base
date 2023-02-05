@@ -37,6 +37,18 @@
   opacity: 0;
 }
 
+.focusRing {
+  outline: var(--ods-btn-focus-ring-outline-width) solid var(--ods-focus-ring-color);
+  outline-offset: var(--ods-btn-focus-ring-outline-offset);
+
+}
+
+.focusRingKeyboard {
+  outline: var(--ods-btn-keyboard-focus-ring-outline-width) solid var(--ods-focus-ring-color);
+  outline-offset: var(--ods-btn-keyboard-focus-ring-outline-offset);
+
+}
+
 /*
   Sizes
  */

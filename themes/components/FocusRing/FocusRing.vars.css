@@ -1,6 +1,6 @@
 .ods-theme {
   --ods-focus-ring-outline-width: 1px;
-  --ods-focus-ring-outline-offset: 1px;
-  --ods-focus-ring-keyboard-outline-width: 2px;
-  --ods-focus-ring-keyboard-outline-offset: 1px;
+  --ods-focus-ring-outline-offset: -1px;
+  --ods-focus-ring-keyboard-outline-width: 1px;
+  --ods-focus-ring-keyboard-outline-offset: -1px;
 }

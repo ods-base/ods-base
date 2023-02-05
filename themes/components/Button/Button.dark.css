@@ -1,19 +1,19 @@
 .ods-dark-mode {
   /* background/border */
-  --ods-btn-accent-color: var(--ods-color-dark-plum-11);
-  --ods-btn-primary-color: var(--ods-color-dark-gray-11);
-  --ods-btn-secondary-color: var(--ods-color-dark-gray-8);
-  --ods-btn-destroy-color: var(--ods-color-dark-red-11);
+  --ods-btn-accent-color: var(--ods-color-dark-plum-9);
+  --ods-btn-primary-color: var(--ods-color-dark-blue-9);
+  --ods-btn-secondary-color: var(--ods-color-dark-gray-9);
+  --ods-btn-destroy-color: var(--ods-color-dark-red-9);
 
   --ods-btn-accent-hov-color: var(--ods-color-dark-plum-10);
-  --ods-btn-primary-hov-color: var(--ods-color-dark-gray-10);
-  --ods-btn-secondary-hov-color: var(--ods-color-dark-gray-7);
+  --ods-btn-primary-hov-color: var(--ods-color-dark-blue-10);
+  --ods-btn-secondary-hov-color: var(--ods-color-dark-gray-10);
   --ods-btn-destroy-hov-color: var(--ods-color-dark-red-10);
 
-  --ods-btn-accent-active-color: var(--ods-color-dark-plum-9);
-  --ods-btn-primary-active-color: var(--ods-color-dark-gray-9);
-  --ods-btn-secondary-active-color: var(--ods-color-dark-gray-6);
-  --ods-btn-destroy-active-color: var(--ods-color-dark-red-9);
+  --ods-btn-accent-active-color: var(--ods-color-dark-plum-11);
+  --ods-btn-primary-active-color: var(--ods-color-dark-blue-11);
+  --ods-btn-secondary-active-color: var(--ods-color-dark-gray-11);
+  --ods-btn-destroy-active-color: var(--ods-color-dark-red-11);
 
   --ods-btn-accent-disabled-color: var(--ods-color-dark-gray-7);
   --ods-btn-primary-disabled-color: var(--ods-color-dark-gray-7);
@@ -23,17 +23,17 @@
   /* text */
   --ods-btn-accent-text-color: var(--ods-color-dark-plum-3);
   --ods-btn-primary-text-color: var(--ods-color-dark-gray-3);
-  --ods-btn-secondary-text-color: var(--ods-color-dark-gray-11);
+  --ods-btn-secondary-text-color: var(--ods-color-dark-gray-9);
   --ods-btn-destroy-text-color: var(--ods-color-dark-red-3);
 
   --ods-btn-accent-hov-text-color: var(--ods-color-dark-plum-3);
   --ods-btn-primary-hov-text-color: var(--ods-color-dark-gray-3);
-  --ods-btn-secondary-hov-text-color: var(--ods-color-dark-gray-11);
+  --ods-btn-secondary-hov-text-color: var(--ods-color-dark-gray-10);
   --ods-btn-destroy-hov-text-color: var(--ods-color-dark-red-3);
 
   --ods-btn-accent-active-text-color: var(--ods-color-dark-plum-2);
   --ods-btn-primary-active-text-color: var(--ods-color-dark-gray-2);
-  --ods-btn-secondary-active-text-color: var(--ods-color-dark-gray-10);
+  --ods-btn-secondary-active-text-color: var(--ods-color-dark-gray-11);
   --ods-btn-destroy-active-text-color: var(--ods-color-dark-red-2);
 
   --ods-btn-accent-disabled-text-color: var(--ods-color-dark-gray-8);

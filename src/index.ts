@@ -3,3 +3,4 @@ export * from "./Typography/Heading/Heading";
 export * from "./Typography/Text/Text";
 export * from "./ProgressCircle/ProgressCircle";
 export * from "./Form/TextField/TextField";
+export * from "./FocusRing/FocusRing";

@@ -85,7 +85,10 @@ function Button(
   const Component = asChild ? Slot : "button";
 
   return (
-    <FocusRing>
+    <FocusRing
+      focusClass={styles.focusRing}
+      focusRingClass={styles.focusRingKeyboard}
+    >
       <Component
         {...buttonProps}
         style={style}

@@ -19,4 +19,9 @@
   --ods-btn-l-padding: 20px;
   --ods-btn-l-height: 35px;
   --ods-btn-l-border-radius: 8px;
+
+  --ods-btn-focus-ring-outline-offset: 2px;
+  --ods-btn-focus-ring-outline-width: 1px;
+  --ods-btn-keyboard-focus-ring-outline-offset: 2px;
+  --ods-btn-keyboard-focus-ring-outline-width: 1px;
 }
