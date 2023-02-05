@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 16
           cache: 'pnpm'
+          registry-url: 'https://registry.npmjs.org'
           
       - name: Install dependencies
         run: pnpm install
@@ -37,7 +38,10 @@ jobs:
         run: echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
 
       - name: Publish to GitHub Packages
-        run: pnpm -r publish --no-git-checks --access public
+        run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#        run: pnpm -r publish --no-git-checks --access public
 
       - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@master
