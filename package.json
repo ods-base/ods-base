@@ -1,6 +1,6 @@
 {
   "name": "@bob-obringer/ods",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "",
   "typings": "dist/index.d.ts",
   "module": "dist/index.esm.js",
