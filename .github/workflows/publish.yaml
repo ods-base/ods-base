@@ -1,7 +1,7 @@
 name: Publish to GitHub Packages
 
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
 on:
   push:
@@ -34,14 +34,11 @@ jobs:
       - name: Build package
         run: pnpm run build
 
-#      - name: Config npm
-#        run: echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > .npmrc
-
+      - name: Configure repo
+        run: echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+      
       - name: Publish to NPM
         run: pnpm -r publish --no-git-checks --access public
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-#        run: pnpm -r publish --no-git-checks --access public
 
       - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@master
