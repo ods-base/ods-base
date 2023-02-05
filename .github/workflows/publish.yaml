@@ -35,14 +35,12 @@ jobs:
         run: pnpm run build
 
       - name: Configure repo
-        run: |
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
-          cat .npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
           
       - name: Publish to NPM
         run: pnpm -r publish --no-git-checks --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#        env:
+#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@master
