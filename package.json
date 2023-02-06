@@ -1,6 +1,6 @@
 {
-  "name": "ods-base",
-  "version": "0.0.22",
+  "name": "@ods-base/ods-base",
+  "version": "0.0.23",
   "description": "",
   "typings": "dist/index.d.ts",
   "module": "dist/index.esm.js",
