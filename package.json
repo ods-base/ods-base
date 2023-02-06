@@ -6,6 +6,9 @@
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
   "repository": "https://github.com/ods-base/ods-base.git",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "dev": "pnpm rollup:watch",
     "build": "pnpm rollup:build",
