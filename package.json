@@ -1,5 +1,5 @@
 {
-  "name": "@ods-base/ods-base",
+  "name": "ods-base",
   "version": "0.0.23",
   "description": "",
   "typings": "dist/index.d.ts",
