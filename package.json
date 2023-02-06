@@ -1,11 +1,11 @@
 {
-  "name": "@bob-obringer/ods",
+  "name": "ods-base",
   "version": "0.0.22",
   "description": "",
   "typings": "dist/index.d.ts",
   "module": "dist/index.esm.js",
   "main": "dist/index.js",
-  "repository": "https://github.com/bob-obringer/ods.git",
+  "repository": "https://github.com/ods-base/ods-base.git",
   "scripts": {
     "dev": "pnpm rollup:watch",
     "build": "pnpm rollup:build",
