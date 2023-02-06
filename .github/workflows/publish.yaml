@@ -39,8 +39,6 @@ jobs:
           
       - name: Publish to NPM
         run: pnpm -r publish --no-git-checks --access public
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Automated Version Bump
         uses: phips28/gh-action-bump-version@master
