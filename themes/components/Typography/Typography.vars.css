@@ -34,8 +34,8 @@
   --ods-typo-heading-size-xs: var(--ods-font-size-200);
   --ods-typo-heading-size-xxs: var(--ods-font-size-100);
 
-  --ods-typo-heading-weight-light: 200;
-  --ods-typo-heading-weight-default: 500;
+  --ods-typo-heading-weight-light: 300;
+  --ods-typo-heading-weight-default: 400;
   --ods-typo-heading-weight-heavy: 700;
 
   /* Text */

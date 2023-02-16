@@ -45,7 +45,19 @@ const textVariants = cva(styles.text, {
   },
 });
 
-type ValidElement = "a" | "div" | "span" | "p" | "li" | "ul";
+type ValidElement =
+  | "a"
+  | "div"
+  | "span"
+  | "p"
+  | "li"
+  | "ul"
+  | "h1"
+  | "h2"
+  | "h3"
+  | "h4"
+  | "h5"
+  | "h6";
 
 export type TextProps<As extends ValidElement> = ComponentPropsWithoutRef<As> &
   VariantProps<typeof textVariants> & {

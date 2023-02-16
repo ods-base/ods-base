@@ -17,13 +17,12 @@ function getStyleConfig(fileName) {
     input: `./themes/${fileName}.css`,
     output: {
       file: `dist/${fileName}.css`,
-      format: 'es'
     },
     plugins: [
       postcss({
         extract: true,
-        minimize: true
-      })
+        minimize: true,
+      }),
     ]
   })
 }
@@ -32,6 +31,7 @@ export default [
   getStyleConfig('ods-theme'),
   getStyleConfig('ods-light-mode'),
   getStyleConfig('ods-dark-mode'),
+  getStyleConfig('reset'),
   defineConfig({
     input: './src/index.ts',
     output: [
@@ -87,7 +87,7 @@ export default [
         include: /\/node_modules\//
       })
     ],
-    external: [...Object.keys(peerDependencies), 'react/jsx-runtime']
+    external: [...Object.keys(peerDependencies), 'react/jsx-runtime', 'ods-theme.css', 'ods-light-mode.css', 'ods-dark-mode.css']
   }),
   {
     input: './src/index.ts',
